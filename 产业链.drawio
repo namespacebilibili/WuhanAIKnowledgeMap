@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2024-04-06T15:12:05.796Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="6ge96AzBvfJzKFBYrlZb" version="24.2.2" type="device">
+  <diagram name="Page-1" id="bKf30BQBS9SOyUDRpg8l">
+    <mxGraphModel dx="2074" dy="1180" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-2" value="人工智能技术研发" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-3" value="人工智能通用技术研发" style="whiteSpace=wrap;html=1;aspect=fixed;align=center;" vertex="1" parent="1">
+          <mxGeometry x="159" y="340" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdtwuQprqTv3VuXi3h-p-4" target="OdtwuQprqTv3VuXi3h-p-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-4" value="人工智能产品研发" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-5" value="人工智能软硬件产品研发" style="whiteSpace=wrap;html=1;aspect=fixed;align=center;" vertex="1" parent="1">
+          <mxGeometry x="339" y="340" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdtwuQprqTv3VuXi3h-p-6" target="OdtwuQprqTv3VuXi3h-p-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-6" value="人工智能产品制造" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="519" y="480" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-7" value="人工智能产品制造" style="whiteSpace=wrap;html=1;aspect=fixed;align=center;" vertex="1" parent="1">
+          <mxGeometry x="519" y="340" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdtwuQprqTv3VuXi3h-p-8" target="OdtwuQprqTv3VuXi3h-p-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-8" value="人工智能产品" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdtwuQprqTv3VuXi3h-p-9" target="OdtwuQprqTv3VuXi3h-p-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-9" value="销售与服务" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="800" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-10" value="&lt;ul style=&quot;font-size: 13px;&quot;&gt;&lt;li&gt;人工智能产品销售&lt;br&gt;&lt;/li&gt;&lt;li&gt;人工智能产品租赁服务&lt;br&gt;&lt;/li&gt;&lt;li&gt;人工智能教育服务&lt;br&gt;&lt;/li&gt;&lt;li&gt;人工智能数据服务&lt;/li&gt;&lt;li&gt;。。。&lt;/li&gt;&lt;/ul&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;align=left;" vertex="1" parent="1">
+          <mxGeometry x="489" y="770" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-11" value="消费者" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="339" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OdtwuQprqTv3VuXi3h-p-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OdtwuQprqTv3VuXi3h-p-2" target="OdtwuQprqTv3VuXi3h-p-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="499" y="600" as="sourcePoint" />
+            <mxPoint x="549" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
