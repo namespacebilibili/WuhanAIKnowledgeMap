@@ -131,9 +131,9 @@ def add_standard_product():
         puncs = ',，。、；（）;：'
         for punc in puncs:
             bussiness_scope = bussiness_scope.replace(punc, ' ')
+        standard_products = set()
+        chain_classes = set()
         for product in bussiness_scope.split(' '):
-            standard_products = set()
-            chain_classes = set()
             for key_word in ai_keywords:
                 if key_word in product:
                     try:
@@ -144,16 +144,26 @@ def add_standard_product():
                     except:
                         print(f'产品 {product} 未找到对应的标准产品')
                         continue
-            for i, standard_product in enumerate(standard_products):
-                company_data.at[index, f'标准产品{i+1}'] = standard_product
-            for i, chain_class in enumerate(chain_classes):
-                company_data.at[index, f'产业链{i+1}'] = chain_class
+        for i, standard_product in enumerate(standard_products):
+            company_data.at[index, f'标准产品{i+1}'] = standard_product
+        for i, chain_class in enumerate(chain_classes):
+            company_data.at[index, f'产业链{i+1}'] = chain_class
 
     company_data.to_csv('data/武汉市AI相关企业(新).csv', index=False)
+
+def select_company():
+    data = pd.read_csv('data/武汉市AI相关企业(新).csv', encoding='utf-8')
+    # 选出标准产品多于1个的公司, i.e. data['标准产品2'] is not nan
+    print([data['标准产品2'].notna()])
+    print(data['标准产品2'][0])
+    selected_data = data[data['标准产品2'].notna()]
+    selected_data.to_csv('data/selected.csv', index=False)
+
 
 
 if __name__ == '__main__':
     # preprocess()
     # cluster_product()
-    match_product_to_standard_product()
+    # match_product_to_standard_product()
     add_standard_product()
+    # select_company()
