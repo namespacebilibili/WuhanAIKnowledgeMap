@@ -153,7 +153,7 @@ def add_standard_product():
 
 
 if __name__ == '__main__':
-    preprocess()
+    # preprocess()
     # cluster_product()
     match_product_to_standard_product()
     add_standard_product()
