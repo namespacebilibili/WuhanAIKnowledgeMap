@@ -151,12 +151,12 @@ def add_standard_product():
 
     company_data.to_csv('data/武汉市AI相关企业(新).csv', index=False)
 
-def select_company():
+def select_company(n=3):
     data = pd.read_csv('data/武汉市AI相关企业(新).csv', encoding='utf-8')
     # 选出标准产品多于1个的公司, i.e. data['标准产品2'] is not nan
-    print([data['标准产品2'].notna()])
-    print(data['标准产品2'][0])
-    selected_data = data[data['标准产品2'].notna()]
+    # print([data['标准产品2'].notna()])
+    print(data[f'标准产品{n}'][0])
+    selected_data = data[data[f'标准产品{n}'].notna()]
     selected_data.to_csv('data/selected.csv', index=False)
 
 
@@ -165,5 +165,5 @@ if __name__ == '__main__':
     # preprocess()
     # cluster_product()
     # match_product_to_standard_product()
-    add_standard_product()
-    # select_company()
+    # add_standard_product()
+    select_company()
