@@ -35,6 +35,12 @@ with open('./data/patent_nodes.json','r', encoding='utf-8') as f:
 with open('./data/collaborator_nodes.json','r', encoding='utf-8') as f:
     collaborator_nodes = json.load(f)
 
+with open('./data/innovation_level_nodes.json','r', encoding='utf-8') as f:
+    level_nodes = json.load(f)
+
+with open('./data/patent_numbers.json','r', encoding='utf-8') as f:
+    patent_numbers = json.load(f)
+
 # 定义关系集
 edges_set = {
     'domain_industry_belongs_to' : set(),
@@ -44,6 +50,7 @@ edges_set = {
     'downstream_industry': set(),
     'invent': set(),
     'collaborate': set(),
+    'innovation_level': set(),
 }
 
 # 定义关系三元组
@@ -56,11 +63,13 @@ edges_set_tuple = {
     'downstream_industry': ['industry', 'industry','下游'],
     'invent': ['company', 'patent', '发明'],
     'collaborate': ['collaborator', 'patent', '合作发明'],
+    'innovation_level': ['company', 'level', '创新等级属于'],
 }
 
 
 # 在预定义集合中搜索并构建边关系
-
+for item in patent_numbers:
+    edges_set['innovation_level'].add((item['company'], item['innovation_level']))
 for node1 in patent_nodes:
     company_name = node1['company']
     for node2 in company_nodes:
@@ -109,6 +118,10 @@ for k in edges_set.keys():
 
 graph = Graph('http://localhost:7474', user='neo4j', password='neo4j')
 
+for n in level_nodes:
+    node = Node('level', **n)
+    graph.create(node)
+    
 for n in collaborator_nodes:
     node = Node('collaborator', **n)
     graph.create(node)
