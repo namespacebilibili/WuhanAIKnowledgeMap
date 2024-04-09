@@ -97,3 +97,12 @@ def create_evaluation():
     levels = [{"name": "潜力型"}, {"name": "优势型"}, {"name": "领先型"}, {"name": "巅峰型"}]
     with open('innovation_level_nodes.json', 'w', encoding='utf-8') as file:
         json.dump(levels, file, ensure_ascii=False, indent=4)
+
+def evaluate():
+    with open('patent_numbers.json', 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    innovation_counts = {}
+    for item in data:
+        innovation_level = item['innovation level']
+        innovation_counts[innovation_level] = innovation_counts.get(innovation_level, 0) + 1
+    print(innovation_counts)
