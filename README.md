@@ -10,4 +10,7 @@ In `preprocess.py`:
 + Run `select_company` to select companies that have more than `n` standard products.
 
 In `utils_patent.py`:
-+ helper functions related to patent information and patent collaboration information.
++ helper functions related to patent information and patent collaboration information:
++ Run `extract_patent()` to filter AI related patents.
++ Run `evaluate()` to count patent numbers for each unique AI company and evaluate innovation standard.
++ Run `collaborators()` to collect information about patent collaborators.
